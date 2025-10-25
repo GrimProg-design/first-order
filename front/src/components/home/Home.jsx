@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import burana from "../../assets/burana.jpeg";
 import sonkol from "../../assets/son-kol.jpeg";
 import isukkul from "../../assets/isuk-kul.jpeg";
+import djetyoguz from "../../assets/places/djety-oguz.jpeg"
 
 export default function Home() {
   useEffect(() => {
@@ -26,10 +27,18 @@ export default function Home() {
       <header>
         <h1 className="fade-up">Kyrgyzstan</h1>
         <div className="artic-wrap fade-up">
-          <article></article>
-          <article></article>
-          <article></article>
-          <article></article>
+          <article>
+            <img src={burana} alt="Бурана" />
+          </article>
+          <article>
+            <img src={sonkol} alt="Сон Коль" />
+          </article>
+          <article>
+            <img src={isukkul} alt="Ыссык Куль" />
+          </article>
+          <article>
+            <img src={djetyoguz} alt="Джети Огуз" />
+          </article>
           <a href="#form">
             <button className="tours">Тур</button>
           </a>
