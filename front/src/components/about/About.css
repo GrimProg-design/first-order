@@ -1,0 +1,83 @@
+.places {
+  font-family: 'Inter', sans-serif;
+  color: white;
+  background: linear-gradient(180deg, #001f3f, #004d40);
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.places h1 {
+  font-size: 1.4em;
+  margin-bottom: 25px;
+  margin-top: 50px;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  font-weight: 600;
+  animation: fadeInDown 1s ease;
+}
+
+.places-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.place-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  backdrop-filter: blur(8px);
+  animation: floatUp 0.8s ease;
+}
+
+.place-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.place-info {
+  padding: 15px;
+}
+
+.place-info h2 {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  color: #f8f8f8;
+}
+
+.place-info p {
+  font-size: 0.9em;
+  color: #e0e0e0;
+  line-height: 1.4;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .places {
+    padding: 15px;
+  }
+
+  .places h1 {
+    font-size: 1.3em;
+  }
+
+  .place-card img {
+    height: 150px;
+  }
+
+  .place-info p {
+    font-size: 0.85em;
+  }
+}

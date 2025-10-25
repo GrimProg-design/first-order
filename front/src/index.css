@@ -1,0 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 412px;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}

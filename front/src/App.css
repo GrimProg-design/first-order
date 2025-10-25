@@ -1,0 +1,11 @@
+.main-con {
+  border: 1px solid black;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}

@@ -1,0 +1,80 @@
+nav {
+    width: 90vw;
+    max-width: 350px;
+    height: 40px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px); /* красивый blur */
+    padding: 8px 12px;
+    box-sizing: border-box;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.name-wrap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+img {
+    width: 24px;
+    height: 24px;
+}
+
+.country {
+    color: white;
+    font-weight: 500;
+    font-size: 1em;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+}
+
+.buttons-con {
+    display: flex;
+    gap: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.not-active {
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.not-active:hover {
+    color: white;
+}
+
+.active {
+    color: white;
+    font-weight: 600;
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+}
+
+.nav-button {
+    width: 60px;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.nav-button:hover {
+    background-color: rgba(255,255,255,0.4);
+    transform: scale(1.05);
+}
